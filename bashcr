@@ -1,0 +1,19 @@
+                export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+                export PATH=$PATH:$JAVA_HOME/bin
+                export HADOOP_HOME=/usr/local/hadoop
+                export PATH=$PATH:$HADOOP_HOME/bin
+                export PATH=$PATH:$HADOOP_HOME/sbin
+                export HADOOP_MAPRED_HOME=$HADOOP_HOME
+                export HADOOP_COMMON_HOME=$HADOOP_HOME
+                export HADOOP_HDFS_HOME=$HADOOP_HOME
+                export YARN_HOME=$HADOOP_HOME
+                export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+                export HADOOP_OPTS="$HADOOP_OPTS -Djava.security.egd=file:/dev/../dev/urandom"
+                export HIVE_HOME=/usr/local/hive
+                export PATH=$PATH:$HIVE_HOME/bin
+                export CLASSPATH=$CLASSPATH:/usr/local/hive/lib/*:.
+                export SPARK_HOME=/usr/local/spark
+                export PATH=$PATH:$SPARK_HOME/bin
+                #To use pyspark with python3 for default
+                export PYSPARK_PYTHON=python3
+                export PYSPARK_DRIVER_PYTHON=python3
